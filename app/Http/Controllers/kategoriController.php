@@ -53,8 +53,7 @@ class kategoriController extends Controller
             'keterangan' => 'nullable|string|max:255',
             'status' => 'required|in:aktif,nonaktif',
         ]);
-    
-        // Cari kategori berdasarkan id_kategori
+
         $kategori = Kategori::findOrFail($id_kategori);
         $kategori->update($request->all());
     
