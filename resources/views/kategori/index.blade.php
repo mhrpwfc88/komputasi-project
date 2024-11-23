@@ -41,7 +41,7 @@
                                      Edit
                                  </a>
                                  <!-- Tombol Hapus -->
-                                 <form action="{{ route('master.data.kategori.destroy', $kategori->id_kategori) }}"
+                                 {{-- <form action="{{ route('master.data.kategori.destroy', $kategori->id_kategori) }}"
                                      method="POST" style="display:inline;">
                                      @csrf
                                      @method('DELETE')
@@ -49,7 +49,7 @@
                                          onclick="return confirm('Apakah Anda yakin ingin menghapus kategori ini?')">
                                          Hapus
                                      </button>
-                                 </form>
+                                 </form> --}}
                              </td>
                              <td>{{ $kategori->nama }}</td>
                              <td>{{ $kategori->keterangan ?? 'Tidak ada keterangan' }}</td>
