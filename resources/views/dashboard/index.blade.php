@@ -44,7 +44,7 @@
                                         Edit
                                     </button>
                                 </div>
-                                <small class="text-body-secondary">{{$buku->created_at}}</small>
+                                <small class="text-body-secondary">{{ $buku->updated_at->format('d-m-Y') }}</small>
                             </div>
                         </div>
                     </div>
