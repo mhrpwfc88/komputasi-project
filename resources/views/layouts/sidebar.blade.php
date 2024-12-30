@@ -39,6 +39,12 @@
                         Buku
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center gap-2" href="{{route('master.data.user.index')}}">
+                        <i class="bi bi-person-circle"></i>
+                        User
+                    </a>
+                </li>
             </ul>
 
             <hr class="my-3" />
@@ -51,10 +57,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link d-flex align-items-center gap-2" href="#">
-                        <i class="bi bi-door-closed"></i>
-                        Sign out
-                    </a>
+                    <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                        @csrf
+                        <button type="submit" class="nav-link d-flex align-items-center gap-2 btn-link text-decoration-none">
+                            <i class="bi bi-door-closed"></i>
+                            Sign out
+                        </button>
+                    </form>
                 </li>
             </ul>
         </div>

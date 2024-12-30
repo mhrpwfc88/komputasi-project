@@ -16,7 +16,6 @@
         <div class="container mt-4">
             <form action="{{ route('master.data.buku.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
-
                 <!-- Kategori -->
                 <div class="mb-3">
                     <label for="kategori" class="form-label">Kategori</label>
@@ -61,7 +60,6 @@
                         <option value="nonaktif">Non-Aktif</option>
                     </select>
                 </div>
-
                 <!-- Submit Button -->
                 <div class="mb-3">
                     <button class="btn btn-primary" type="submit">
